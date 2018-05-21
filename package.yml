@@ -1,0 +1,29 @@
+name       : frogr
+version    : 1.4
+release    : 1
+source     :
+    - http://ftp.acc.umu.se/pub/GNOME/sources/frogr/1.4/frogr-1.4.tar.xz : ace4c9e60364fa5e183384a3e25a0c4ee77c77c59f4bb33f8980ba57317ae68e
+license    : GPL-3.0-or-later
+component  : multimedia.graphics
+summary    : A flickr remote organizer for GNOME
+description: |
+    Frogr is a small application for the GNOME desktop that allows users to manage their accounts in the Flickr image hosting website. It supports all the basic Flickr features, including uploading pictures, adding descriptions, setting tags and managing sets and groups pools.
+builddeps  :
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libsoup-2.4)
+    - pkgconfig(libexif)
+    - itstool
+    - libgcrypt-devel
+    - meson
+    - yelp-tools-devel
+rundeps :
+    - exiv2
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
+
