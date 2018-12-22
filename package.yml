@@ -1,8 +1,8 @@
 name       : frogr
-version    : 1.4
-release    : 1
+version    : '1.4'
+release    : 2
 source     :
-    - http://ftp.acc.umu.se/pub/GNOME/sources/frogr/1.4/frogr-1.4.tar.xz : ace4c9e60364fa5e183384a3e25a0c4ee77c77c59f4bb33f8980ba57317ae68e
+    - https://download.gnome.org/sources/frogr/1.4/frogr-1.4.tar.xz : ace4c9e60364fa5e183384a3e25a0c4ee77c77c59f4bb33f8980ba57317ae68e
 license    : GPL-3.0-or-later
 component  : multimedia.graphics
 summary    : A flickr remote organizer for GNOME
@@ -17,8 +17,8 @@ builddeps  :
     - itstool
     - libgcrypt-devel
     - meson
-    - yelp-tools-devel
-rundeps :
+    - yelp-devel
+rundeps    :
     - exiv2
 setup      : |
     %configure

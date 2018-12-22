@@ -2,8 +2,8 @@
     <Source>
         <Name>frogr</Name>
         <Packager>
-            <Name>Devil505</Name>
-            <Email>devil505linux@gmail.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>multimedia.graphics</PartOf>
@@ -19,10 +19,15 @@
 </Description>
         <PartOf>multimedia.graphics</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/frogr</Path>
             <Path fileType="data">/usr/share/appdata/org.gnome.frogr.appdata.xml</Path>
             <Path fileType="data">/usr/share/applications/org.gnome.frogr.desktop</Path>
-            <Path fileType="data">/usr/share/frogr</Path>
+            <Path fileType="data">/usr/share/frogr/gtkbuilder/frogr-app-menu.ui</Path>
+            <Path fileType="data">/usr/share/frogr/gtkbuilder/frogr-context-menu.ui</Path>
+            <Path fileType="data">/usr/share/frogr/gtkbuilder/frogr-main-view.ui</Path>
+            <Path fileType="data">/usr/share/frogr/gtkbuilder/frogr-menu-bar.ui</Path>
+            <Path fileType="data">/usr/share/frogr/gtkbuilder/frogr-menu-button.ui</Path>
+            <Path fileType="data">/usr/share/frogr/images/mpictures.png</Path>
             <Path fileType="doc">/usr/share/help/C/frogr/add-pictures.page</Path>
             <Path fileType="doc">/usr/share/help/C/frogr/create-account.page</Path>
             <Path fileType="doc">/usr/share/help/C/frogr/display.page</Path>
@@ -343,17 +348,48 @@
             <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/org.gnome.frogr.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/org.gnome.frogr-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/org.gnome.frogr.svg</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="localedata">/usr/share/locale/bs/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/da/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/el/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/en_GB/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/hu/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/id/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/lv/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nb/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/nn/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/oc/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pl/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/pt_BR/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ro/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ru/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sl/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sr@latin/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/sv/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/te/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/tr/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/frogr.mo</Path>
+            <Path fileType="man">/usr/share/man/man1/frogr.1</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-05-20</Date>
+        <Update release="2">
+            <Date>2018-12-22</Date>
             <Version>1.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Devil505</Name>
-            <Email>devil505linux@gmail.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
